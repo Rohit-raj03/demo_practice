@@ -4,6 +4,24 @@
   --Rose-50: hsl(330, 100%, 98%);
   --dark-brown: hsl(30, 10%, 34%);
   --light-border: hsl(30, 18%, 87%);
+  --body-background: hsl(30, 54%, 90%);
+  --card-background: white;
+  --text-color: hsl(24, 5%, 18%);
+  --paragraph-color: hsl(24, 5%, 18%);
+}
+body.dark {
+  --Brown-800: hsl(14, 65%, 70%);
+  --Rose-800: hsl(332, 70%, 72%);
+  --Rose-50: hsl(332, 20%, 16%);
+
+  --dark-brown: hsl(30, 12%, 72%);
+  --light-border: hsl(30, 8%, 25%);
+
+  --body-background: hsl(24, 18%, 8%);
+  --card-background: hsl(24, 16%, 12%);
+
+  --text-color: hsl(30, 20%, 95%);
+  --paragraph-color: hsl(30, 10%, 78%);
 }
 * {
   margin: 0;
@@ -17,13 +35,13 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: "Outfit", sans-serif;
-  background: hsl(30, 54%, 90%);
-  color: hsl(24, 5%, 18%);
+  background: var(--body-background);
+  color: var(--text-color);
 }
 .recipe-card {
   padding: 2.2rem;
   max-width: 700px;
-  background: white;
+  background: var(--card-background);
   border-radius: 1.5rem;
   margin-top: 9rem;
 }
@@ -46,7 +64,7 @@ body {
 }
 .recipe-card p {
   font-family: "Outfit", sans-serif;
-  color: hsl(24, 5%, 18%);
+  color: var(--paragraph-color);
 }
 .recipe-card .prep {
   background: var(--Rose-50);
